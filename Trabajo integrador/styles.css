@@ -1,0 +1,91 @@
+body{
+    line-height: 1.8;
+}
+section{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar .nav-link{
+    letter-spacing: 1px;
+}
+
+/* .navbar .nav-link:hover{
+    color: white;
+} */
+#conferencia{
+    min-height: 70vh;
+    background-image: url(img/ba1convertido.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    text-align: end;
+}
+#conferencia::before{
+    content:"";
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+#ticket{
+    background-color: rgb(7, 162, 28);
+}
+#ticket:hover{
+    background-color: rgb(1, 130, 18);
+}
+#texto{
+    margin-top: 180px;
+    margin-right:50;
+    z-index: 10;
+}
+#carta{
+    background-color: rgba(38,38,42,0.9);
+    color: white;
+    border-top: 1px solid black;
+}
+#carta-imagen{
+    border-right: 1px solid white;
+}
+
+#ignite{
+    color: black;
+    text-decoration: dotted;
+    border-bottom: 2px solid black;
+    border-style: none none dotted;
+}
+
+#enviar{
+    border: none;
+    font-size: 20px;
+}
+
+.mini-titulo{
+    margin: 0;
+}
+#contenedor a{
+    text-decoration: none;
+    color: white;
+    margin:10px;
+}
+.col-md-1{
+    min-width: 156px;
+}
+#contenedor a:hover{
+    color: navajowhite;
+}
+
+@media (max-width:767px){
+    #conferencia{
+        text-align: justify;
+    }
+}
+
+@media (min-width:1440px){
+    #texto{
+        margin-top: 250px;
+        margin-right:50px;
+    }
+}
